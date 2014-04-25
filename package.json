@@ -1,0 +1,38 @@
+{
+  "name": "hack",
+  "version": "0.0.1",
+  "description": "Artsy hackathon project 2014.",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/artsy/benv.git"
+  },
+  "author": {
+    "name": "Craig Spaeth",
+    "email": "craigspaeth@gmail.com",
+    "url": "http://craigspaeth.com"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "coffee-script": "*",
+    "browserify": "*",
+    "three": "*",
+    "browserify-dev-middleware": "*",
+    "jadeify": "*",
+    "caching-coffeeify": "*",
+    "nib": "*",
+    "artsy-xapp-middleware": "*",
+    "sharify": "*",
+    "request": "*",
+    "backbone": "*",
+    "underscore": "*",
+    "artsy-backbone-mixins": "*"
+  }
+}

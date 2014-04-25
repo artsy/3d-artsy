@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title Artsy Hackathon 2014
+    link( type='text/css', rel='stylesheet', href='index.css' )
+  body
+    #main-spinner
+      .loading-spinner-white
+    #canvas-container
+    #scripts
+      != sharify.script()
+      script( src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" )
+      script( src='/index.js' )

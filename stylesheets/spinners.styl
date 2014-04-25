@@ -1,0 +1,39 @@
+//
+// Styles for loading spinners of all varieties.
+//
+
+@keyframes spin
+  0%
+    transform rotate(0deg)
+    animation-timing-function linear
+  50%
+    transform rotate(180deg)
+    animation-timing-function linear
+  100%
+    transform rotate(360deg)
+    animation-timing-function linear
+
+spinner(width=25px, height=6px, color=black)
+  background color
+  width width
+  height height
+  position absolute
+  top 50%
+  left 50%
+  margin-left (-@width / 2)
+  margin-top (-@height / 2)
+  animation spin 1s infinite
+
+.loading-spinner
+  spinner(25px, 6px)
+
+.loading-spinner-small
+  spinner(20px, 4px)
+
+.loading-spinner-white
+  @extends .loading-spinner
+  background white
+
+.loading-spinner-small-white
+  @extends .loading-spinner-small
+  background white
