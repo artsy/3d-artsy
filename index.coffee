@@ -22,11 +22,6 @@ app.use artsyXappMiddlware
 # General
 app.set 'views', __dirname + '/templates'
 app.set 'view engine', 'jade'
-app.use express.logger('dev')
-app.use express.json()
-app.use express.urlencoded()
-app.use express.methodOverride()
-app.use app.router
 
 # Asset Middleware
 if NODE_ENV is 'development'
