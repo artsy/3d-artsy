@@ -49,7 +49,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   50% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -62,7 +61,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -89,7 +87,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   50% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -102,7 +99,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -129,7 +125,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   50% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -142,47 +137,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    animation-timing-function: linear;
-  }
-}
-@-ms-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    animation-timing-function: linear;
-  }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    animation-timing-function: linear;
-  }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -209,7 +163,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   50% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -222,7 +175,6 @@
     -ms-animation-timing-function: linear;
     animation-timing-function: linear;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
