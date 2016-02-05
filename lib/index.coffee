@@ -3,7 +3,7 @@ require 'three/examples/js/controls/PointerLockControls.js'
 require('backbone').$ = $
 getFavoriteCubes = require './get-favorite-cubes.coffee'
 room = require './room.coffee'
-{ XAPP_TOKEN, ARTWORK_ID,  } = require('sharify').data
+{ XAPP_TOKEN, ARTWORK_ID  } = require('sharify').data
 
 time = null
 
@@ -45,7 +45,7 @@ placeWork = (cubes) ->
 
 render = ->
   requestAnimationFrame render
-  controls.update Date.now() - time
+  # controls.update Date.now() - time
   renderer.render scene, camera
   time = Date.now()
 
@@ -54,7 +54,7 @@ err = (err) ->
 
 $ ->
   $('#canvas-container').html renderer.domElement
-  getFavoriteCubes 'craig',
+  getFavoriteCubes location.hash.replace('#','') or 'craig',
     error: err
     success: (cubes) ->
       init(cubes)

@@ -1,8 +1,8 @@
 express = require 'express'
 sharify = require 'sharify'
-artsyXappMiddlware = require 'artsy-xapp-middleware'
 imageProxy = require './lib/proxy'
-{ NODE_ENV, ARTSY_ID, ARTSY_SECRET, ARTSY_URL, REDIS_URL } = require './config'
+artsyXapp = require 'artsy-xapp'
+{ NODE_ENV, ARTSY_ID, ARTSY_SECRET, ARTSY_URL, REDIS_URL, PORT } = require './config'
 
 # App instance
 app = module.exports = express()
@@ -12,12 +12,6 @@ sharify.data =
   API_URL: ARTSY_URL
   NODE_ENV: NODE_ENV
 app.use sharify
-
-# XAPP middlware
-app.use artsyXappMiddlware
-  artsyUrl: ARTSY_URL
-  clientId: ARTSY_ID
-  clientSecret: ARTSY_SECRET
 
 # General
 app.set 'views', __dirname + '/templates'
@@ -34,7 +28,7 @@ if NODE_ENV is 'development'
 
 # Routes
 app.get '/', (req, res) ->
-  res.locals.sd.XAPP_TOKEN = res.locals.artsyXappToken
+  res.locals.sd.XAPP_TOKEN = artsyXapp.token
   res.render 'index'
 app.use "/proxy", imageProxy
 
@@ -42,5 +36,10 @@ app.use "/proxy", imageProxy
 app.use express.static __dirname + '/public'
 
 # Listen
-app.listen 5000, ->
-  console.log 'listening on 5000'
+artsyXapp.init
+  url: ARTSY_URL
+  id: ARTSY_ID
+  secret: ARTSY_SECRET
+, ->
+  app.listen PORT, ->
+    console.log 'listening on 4000'

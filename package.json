@@ -18,21 +18,23 @@
     "test": "make test"
   },
   "dependencies": {
+    "artsy-backbone-mixins": "*",
+    "artsy-xapp": "^1.0.4",
+    "artsy-xapp-middleware": "*",
+    "backbone": "*",
+    "browserify": "*",
+    "browserify-dev-middleware": "*",
+    "caching-coffeeify": "*",
+    "coffee-script": "*",
     "express": "*",
     "jade": "*",
-    "stylus": "*",
-    "coffee-script": "*",
-    "browserify": "*",
-    "three": "*",
-    "browserify-dev-middleware": "*",
     "jadeify": "*",
-    "caching-coffeeify": "*",
+    "jquery": "^2.2.0",
     "nib": "*",
-    "artsy-xapp-middleware": "*",
-    "sharify": "*",
     "request": "*",
-    "backbone": "*",
-    "underscore": "*",
-    "artsy-backbone-mixins": "*"
+    "sharify": "*",
+    "stylus": "*",
+    "three": "*",
+    "underscore": "*"
   }
 }
