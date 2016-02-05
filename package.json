@@ -15,7 +15,8 @@
     "node": ">= 0.10.x"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "coffee index.coffee"
   },
   "dependencies": {
     "artsy-backbone-mixins": "*",
